@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Queries!</title>
+  <meta name="viewport" content="initial-scale=1,width=device-width">
+
+  <style>
+    /* Add your styles here */
+    body {
+      font-family: Tahoma, sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      color: navy;
+      padding-left: 10px
+    }
+
+    p {
+      background-color: #e1e0e0;
+      padding: 10px;
+      margin: 6px;
+    }
+
+    .container {
+      width: 75%;
+      margin: 0 auto;
+      max-width: 1080px;
+
+    }
+
+    .news {
+      float: left;
+      width: 33.3333%;
+    }
+
+    #img1 {
+      display: block;
+    }
+        
+      #img2 {
+      display: none;
+    }
+
+    /* Add your media queries here */
+   @media screen and (max-width: 940px) {
+        body {
+          background-color: #d2ceb9;
+        }
+        h1 {
+          color: #5d5b52;
+          text-decoration: underline;
+        }
+        p {
+          background-color: #eae5ce;
+        }
+        .news {
+          width: 50%;
+        }
+        #img1 {
+        display: block;
+        }
+        #img2 {
+        display: none;
+        }
+      }
+
+    @media screen and (max-width: 640px) {
+      body {
+        font-size: 1.5em;
+        background-color: #525d5b;
+      }
+      h1 {
+        color: #e5ceea;
+        text-decoration: none;
+      }
+      p {
+        background-color: #ceeae5;
+      }
+      .news {
+        width: 100%;
+      }
+      #img1 {
+        display: none;
+      }
+      #img2 {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="images">
+      <div id="img1"><img src="http://placehold.it/1080x300" alt=""></div>
+      <div id="img2"><img src="http://i0.kym-cdn.com/photos/images/facebook/000/372/498/b35.png"></div>
+    </div>
+      <article class="news">
+        <h1>Title 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+      </article>
+      <article class="news">
+        <h1>Title 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+      </article>
+      <article class="news">
+        <h1>Title 3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+      </article>
+      <article class="news">
+        <h1>Title 4</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+      </article>
+      <article class="news">
+        <h1>Title 5</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+      </article>
+      <article class="news">
+        <h1>Title 6</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+      </article>
+  </div>
+</body>
+</html>
